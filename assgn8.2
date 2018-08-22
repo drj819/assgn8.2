@@ -1,0 +1,26 @@
+Assignment 8.2 (1)
+
+library(RcmdrPlugin.IPSUR)
+x<- c(mean(RcmdrTestDrive$salary),median(RcmdrTestDrive$salary))
+x
+
+
+y<- c(median(RcmdrTestDrive$reduction),mean(RcmdrTestDrive$reduction))
+y
+
+
+x<-RcmdrTestDrive$salary
+h<- hist(x,breaks = 10,col = "brown",xlab = "salary",main= "histogram of salary with normal curve")
+
+y<-RcmdrTestDrive$reduction
+h<- hist(y,breaks = 10,col = "red",xlab = "reduction",main= "histogram of reduction with normal curve")
+
+(2)
+
+boxplot(RcmdrTestDrive$before,horizontal = T,col = "red",xlab="before",ylab="Boxplot")
+
+
+boxplot(RcmdrTestDrive$after,horizontal = T,col = "red",xlab="after",ylab="Boxplot") 
+left side is skewed
+skew (RcmdrTestDrive$before)
+skew (RcmdrTestDrive$after)
